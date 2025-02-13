@@ -1,0 +1,211 @@
+@font-face{
+  font-family: 'font1';
+  src: url('Fonts/Montserrat/Montserrat-VariableFont_wght.ttf')
+  format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: font2;
+  src: url('Fonts/Titillium_Web/TitilliumWeb-Bold.ttf')
+  format('opentype');
+}
+
+@font-face{
+  font-family: font3;
+  src: url('Fonts/Lexend/Lexend-VariableFont_wght.ttf')
+  format('opentype');   
+}
+
+@font-face{
+  font-family: 'font4';
+  src: url('Fonts/Abril_Fatface/AbrilFatface-Regular.ttf')
+  format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'font5';
+  src: url('Fonts/Poppins/Poppins-Regular.ttf')
+  format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'font6';
+  src: url('Fonts/Catamaran/Catamaran-Regular.ttf')
+  format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'font7';
+  src: url('Fonts/Borel/Borel-Regular.ttf')
+  format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'font8';
+  src: url('Fonts/Pacifico/Pacifico-Regular.ttf')
+  format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'font9';
+  src: url('Fonts/Rochester/Rochester-Regular.ttf')
+  format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #c20000;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.9rem;
+    color: #ffffff;
+    font-family: font7;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .yes-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .no-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+
+
+  /* Style for the message text */
+#message {
+  font-size: 180%;
+  margin: 20px auto;    /* Adds space below and centers the text */
+  text-align: center;
+  color: #ffffff;
+  max-width: 600px;     /* Optional: limits the width of the text for better readability */
+}
+
+/* Common styles for the Back and Next buttons */
+#back, #next {
+  background-color: #fa96c5;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the buttons */
+#back:hover:not(:disabled),
+#next:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+/* Disabled button style */
+#back:disabled,
+#next:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+#sound-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff69b4; /* A fun pink color */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+#sound-toggle:hover {
+  background-color: #ff85c0;
+  transform: scale(1.05);
+}
+
+/* Active/pressed effect */
+#sound-toggle:active {
+  transform: scale(0.95);
+}
+
+.gif_container_lily{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gif_container_lily img {
+  max-width: 16%;
+  height: auto;
+}
+
+
+.yes_header{
+  font-size: 1.9rem;
+    color: #ffffff;
+    font-family: font7;
+}
+
+
+.yes_gif{
+  max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
